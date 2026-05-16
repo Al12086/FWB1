@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обработчик FWB</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Обработчик FWB</h1>
+    <p>Вставьте сообщение FWB и нажмите «Обработать». Итоговая строка появится ниже.</p>
+    
+    <textarea id="input" placeholder="Вставьте сюда сообщение FWB..."></textarea>
+    
+    <!-- Сообщение об ошибке -->
+    <div id="error-message"></div>
+
+    <div class="btn-container">
+      <button id="processButton">Обработать</button>
+      <button id="copyButton">Копировать</button>
+      <button id="clearButton">Очистить</button>
+    </div>
+
+    <textarea id="output" readonly placeholder="Результат появится здесь..."></textarea>
+    <div id="notification">Результат скопирован в буфер обмена!</div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
